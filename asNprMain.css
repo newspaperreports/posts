@@ -1,0 +1,903 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 10px / 13px 'Helvetica Neue', 'Arial Nova', Helvetica, Arial, sans-serif;
+    color: #000;
+    background: unset;
+    overflow: visible;
+    word-wrap: break-word;
+    user-select: auto;
+    -webkit-user-select: auto;
+}
+
+/* 
+-----------------------------------------------
+Newspaper Reports Template Style
+Name:        Newspaper Reports
+License:     Premium Version
+Version:     3.0
+Author:      Newspaper Reports
+Author Url:  https://www.newspaperreports.com
+Contact:     asupdatemedia518@gmail.com
+----------------------------------------------- */
+
+:root {
+    --global-cg-link-font: 700 14px / 28px 'Unify Sans', 'Helvetica Neue', 'Arial Nova', Helvetica, Arial, sans-serif;
+    --global-author-font: 'Unify Sans', 'Helvetica Neue', 'Arial Nova', Helvetica, Arial, sans-serif;
+    --global-author-font-color: #000;
+    --global-nprAS-hd-ads-content: 'Advertisement - scroll for more content';
+    --global-nprAS-hd-ads-onylyContent: 'Advertiser';
+    --global-nprAS-hd-ads-color: #787878;
+    --global-nprAS-hd-ads-font: 'Helvetica Neue', 'Arial Nova', Helvetica, Arial, sans-serif;
+    --global-asM-ads-author-font: 'Unify Sans', 'Helvetica Neue', 'Arial Nova', Helvetica, Arial, sans-serif;
+    --global-asM-ads-author-color: #626262;
+    --global-asM-ads-author-hover-color: #b60a7c;
+    --npr-sub-link-color: #626262;
+    --npr-sub-link-hover-color: #303030;
+    --npr-section-hdLine-hover-color: #d60000;
+    --font-family-global: 'Helvetica Neue', 'Arial Nova', Helvetica, Arial, sans-serif;
+    --global-item-headline-font: 'Unify Sans', 'Helvetica Neue', 'Arial Nova', Helvetica, Arial, sans-serif;
+    --global-top-headlines-font: 'Georgia Pro', Georgia, 'Droid Serif', serif;
+    --global-item-hero-headline-color: #303030;
+    --global-item-headline-color: #000;
+    --global-item-headline-hover-color: #626262;
+    --global-item-description-font: 'Georgia Pro', Georgia, 'Droid Serif', serif;
+    --global-item-description-color: #303030;
+    --global-item-description-hover-color: #575050fb;
+    --global-item-tag-font: 'Helvetica Neue', 'Arial Nova', Helvetica, Arial, sans-serif;
+    --global-item-tag-color: #AA1E23;
+    --global-item-publish-time-color: #626262;
+    --global-border-any-side-color: #c2c2c2;
+    --global-third-party-athor-font: 'Unify Sans', 'Helvetica Neue', 'Arial Nova', Helvetica, Arial, sans-serif;
+    --global-third-party-athor-color: #626262;
+    --txt-whi-color: #ffffff;
+    --txt-headline-bg-white: #FFFFFF;
+    --txt-bl-color: #000;
+    --gbMenuBg-color: #303030;
+    --cgHover-color: #ff00bf;
+    --hero-pTitleHover-color: #01eeff;
+    --btnBx-color: #04AA6D;
+    --global-cg-link-color: #fff;
+    --global-cg-link-hover-color: #00FF7F;
+    --global-border-top-color: rgb(0, 152, 254);
+}
+
+/* AS - Newpaper Reports Ads Main Area Design */
+.npr_as_ads_author {
+    display: none;
+}
+
+.asM_ads_ct {
+    margin: 0 0 15px;
+}
+
+.asM_ads_title a {
+    display: block;
+    font: 700 14px / 18px var(--global-asM-ads-author-font);
+    margin: 6px 0 6px 0;
+}
+
+.asM_ads_title a:hover {
+    color: var(--global-asM-ads-author-hover-color);
+}
+
+.asM_ads_author a {
+    display: block;
+    font: 600 12px / 16px var(--global-asM-ads-author-font);
+    color: var(--global-asM-ads-author-color);
+    margin: 5px 0;
+}
+
+.asM_ads_author a:hover {
+    color: var(--global-author-font-color);
+}
+
+.asM_ads_author .asM_ads_click {
+    border-bottom: 1px solid #303030;
+}
+
+.asM_ads_thumb img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/* End Global Google Ads Section Design */
+
+/* Start Global Posts Meta Author Area */
+.author_info {
+    margin: 5px 0px;
+    padding: 5px 0px;
+}
+
+.author_name {
+    float: left;
+    padding-right: 20px;
+}
+
+.author_name::before {
+    content: '\f058';
+    font-family: 'FontAwesome';
+    margin-right: 3px;
+    font-size: 12px;
+}
+
+.author_data {
+    float: right;
+}
+
+.author_name a,
+.author_data .publishedTime {
+    color: var(--global-author-font-color);
+    font: 600 12px / 14px var(--global-author-font);
+    letter-spacing: .5px;
+}
+
+.author_data .publishedTime::before {
+    content: '\f017';
+    font-family: 'FontAwesome';
+    padding-right: 5px;
+    color: #000;
+}
+/* End Global Posts Meta Author Area */
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.as_main_header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.topHeader {
+    border-top: 5px solid var(--global-border-top-color);
+    background-color: #fff;
+}
+
+.topNavbar {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topNavbar .mainLogo a {
+    display: block;
+    /* font: 700 24px / 28px 'Unify Sans', 'Helvetica Neue', 'Arial Nova', Helvetica, Arial, sans-serif; */
+    color: #303030;
+    padding: 5px 0;
+}
+
+.topNavbar .mainLogo a span {
+    color: #f31414;
+}
+
+
+.topHd_cg_lists {
+    list-style: none;
+    align-items: center;
+    gap: 5px;
+}
+
+.topNavbar .topHd_cg_link {
+    color: #fff;
+    padding: 5px 15px;
+    font: 600 14px / 14px var(--global-author-font);
+    fill: #303030;
+    border-radius: 0 20px;
+}
+
+.asNpr_tpHd_hm_bg {
+    background-color: #2e0de7;
+}
+.asNpr_tpHd_sv_bg {
+    background-color: #fc0909;
+}
+.asNpr_tpHd_cs_bg {
+    background-color: #000;
+}
+.asNpr_tpHd_pf_bg {
+    background-color: #186780;
+}
+.asNpr_tpHd_ct_bg {
+    background-color: #cf0f6f;
+}
+
+.topNavbar .topHd_cg_link:hover span {
+    opacity: 0.8;
+}
+
+
+/* User Register Area Design */
+.userRegister_ct .userBtn {
+    border: 1px solid var(--gbMenuBg-color);
+    color: var(--txt-whi-color);
+    padding: 8px 10px;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    letter-spacing: 0.8px;
+    font: 600 12px / 18px var(--global-author-font);
+}
+
+.userRegister_ct .userBtn:hover {
+    color: var(--txt-bl-color);
+}
+
+.userRegister_ct .userBtn::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--gbMenuBg-color);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.userRegister_ct .userBtn span::before {
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 100%;
+    background-color: #04AA6D;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: .5s ease-in-out;
+}
+
+.userRegister_ct .userBtn span::after {
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 100%;
+    background-color: #04AA6D;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: .5s ease-in-out;
+}
+
+.userRegister_ct .userBtn:hover span::before,
+.userRegister_ct .userBtn:hover span::after {
+    width: 100%;
+}
+
+.signUp_Btn {
+    margin-right: 10px;
+}
+/* End Top Header Section Design */
+/* Start Global Header / Menubar Section Design */
+.globalHeader_ct {
+    background: var(--gbMenuBg-color);
+}
+
+.globalHd_info {
+    width: 90%;
+    max-width: 1200px;
+    height: 28px;
+    margin: 0 auto;
+    justify-content: space-between;
+    /* align-items: center; */
+    position: relative;
+}
+
+.gHd_cg_lists {
+    width: 83%;
+    overflow: hidden;
+    margin-left: -10px;
+    list-style: none;
+}
+
+.gHd_sidebar_ct {
+    width: 17%;
+}
+
+.gHd_cg_bx {
+    padding-right: 5px;
+    position: relative;
+}
+
+.gHd_cg_lists a {
+    padding: 0px 10px;
+    display: block;
+    /* letter-spacing: 0.3px; */
+    color: var(--global-cg-link-color);
+    font: var(--global-cg-link-font);
+    user-select: none;
+    -webkit-user-select: none;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.gHd_cg_lists a:focus,
+.gHd_cg_lists a:hover {
+    color: var(--global-cg-link-hover-color);
+}
+
+.gHd_cg_lists a:hover .fas {
+    transform: rotate(180deg);
+}
+
+/* Global Sidebar area */
+.gHd_sidebar_info {
+    align-items: center;
+}
+
+.npr_host_nav_icon {
+    margin: 0 5px 0px 10px;
+}
+
+.npr_host_nav_icon .fas {
+    cursor: pointer;
+}
+
+.npr_host_nav_icon .fas:focus,
+.npr_host_nav_icon .fas:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.npr_host_nav_icon .fas {
+    color: #fff;
+    transition: .3s ease-in-out;
+    border: 2px solid #fff;
+    line-height: 18px;
+    padding: 0px 10px;
+    padding: 0px 10px;
+    border-radius: 50px;
+}
+
+.gSearch_icon {
+    margin: 0 15px;
+}
+
+.gSearch_icon .fa {
+    width: 24px;
+    display: inline-block;
+    line-height: 28px;
+    cursor: pointer;
+    color: var(--txt-whi-color);
+    padding-left: 5px;
+}
+
+.gSearch_btn {
+    position: absolute;
+    display: none;
+    width: 100%;
+    max-width: none;
+    height: 180px;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    border-top: 5px solid rgb(0, 152, 254);
+    background: #303030;
+    padding: 0 0 15px;
+    z-index: 999;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.asSearchSubmit {
+    width: 60px;
+    height: 50px;
+    border: 0;
+    margin: 0 -15px 0 -45px;
+    padding: 0;
+    outline-offset: -8px;
+    fill: #fff;
+    background: 0 0;
+    touch-action: manipulation;
+    cursor: pointer;
+}
+
+.asSearchSubmit:hover {
+    fill: #00FF7F;
+}
+
+.asSearchIcon {
+    width: 42px;
+    height: 42px;
+    margin-top: 3px;
+    stroke: #303030;
+    stroke-width: .5px;
+}
+
+.gSearch_btn .searchBx {
+    width: 90%;
+    max-width: 1200px;
+    height: 46px;
+    padding: 0 50px 0 0;
+    border-style: solid;
+    border-width: 0 0 2px;
+    border-color: #fff;
+    border-radius: 0;
+    outline: 0;
+    background: 0 0;
+    color: var(--txt-whi-color);
+    font: 700 28px 'Unify Sans','Helvetica Neue','Arial Nova',Helvetica,Arial,sans-serif;
+}
+
+.searchBx::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+/* Subscription Area */
+.subscribe_ct a {
+    display: block;
+    padding: 0px 10px;
+    color: #fff;
+    letter-spacing: 0.3px;
+    background-color: #1665cf;
+    font: var(--global-cg-link-font);
+}
+
+
+/* Global NPR Host Nav Dropdown Menu Design */
+.nmp_host_nav {
+    display: none;
+}
+
+.npr_host_nav_ct {
+    display: block;
+    z-index: 99;
+    overflow: hidden auto;
+    position: absolute;
+    top: 28px;
+    right: 0;
+    margin: auto;
+    width: 320px;
+    /* height: calc(100vh - 80px); */
+    height: calc(var(--npr-vh, 100vh) - 80px - var(--npr-sh, 0px));
+    border-top: 5px solid var(--global-border-top-color);
+    background-color: #000;
+}
+
+.npr_hst_nav_info {
+    padding: 0 20px 20px;
+}
+
+.npr_hst_nav_it_hdLine {
+    margin: 22px 0 10px;
+}
+
+.npr_hst_nav_info .npr_hst_nav_it_title {
+    color: #fff;
+}
+
+.npr_hst_nav_info .npr_hst_nav_it_aa {
+    color: rgb(194, 194, 194);
+    font: 700 12px / 18px var(--global-top-headlines-font);
+    word-spacing: 3px;
+}
+
+.npr_hst_nav_info .npr_hst_nav_it_tt {
+    font: 700 16px / 20px var(--global-top-headlines-font);
+    position: relative;
+    display: inline-block;
+}
+
+.npr_hst_nav_it_tt::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+    background-color: var(--global-border-top-color);
+}
+
+.npr_hst_nav_cg {
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+
+.npr_hst_nav_cg_as,
+.npr_hst_nav_cg_rL {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.npr_hst_nav_items a {
+    display: block;
+    fill: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font: 700 14px / 16px var(--global-author-font);
+    text-overflow: ellipsis;
+    padding: 5px 2px;
+}
+
+.npr_hst_nav_items a:hover {
+    color: var(--global-cg-link-hover-color);
+}
+
+/* End Global Header / Menubar Section Design */
+
+/* Start Responsive Mobile Menu Section Design */
+.as_responsive_area {
+    display: none;
+}
+
+@media (max-width: 870px) {
+    .topHeader_ct {
+        display: none;
+        
+    }
+
+    .as_responsive_area {
+        display: block;
+        order: 1;
+    }
+    
+}
+/* End Responsive Mobile Menu Section Design */
+
+/* Start Main Global Section Design */
+.main_global_section {
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+    /* padding-top: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    user-select: auto;
+    -webkit-user-select: auto;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.as_media_area {
+    width: 70%;
+    margin: 0 20px 0 0;
+}
+
+.main_global_section img {
+    max-width: 100%;
+}
+
+.asM_global_item_cg a {
+    display: block;
+    margin: 5px 0px;
+    color: var(--global-item-tag-color);
+    font: 700 12px / 14px var(--global-item-tag-font);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.asM_global_item_cg a:hover {
+    color: #000;
+}
+
+/* Start AS - Media Main Section Design */
+
+/* AS - Media Center Info */
+.asM_center_info {
+    width: 70%;
+    /* margin-left: 20px; */
+}
+
+/* End AS - Media Main Section Design */
+
+/* Start For You News Area Design */
+.forYouNews_ct {
+    margin-bottom: 20px;
+}
+
+.forYou_news_headLine {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--global-border-any-side-color);
+    border-left: 5px solid #303030;
+    font: 700 26px / 28px var(--global-top-headlines-font);
+}
+
+.forYou_items_ct {
+    gap: 20px;
+}
+
+.fY_col_item_bx {
+    width: 50%;
+}
+
+.fY_col_item_dt {
+    flex-flow: row;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--global-border-any-side-color);
+}
+
+.fY_col_item_dt .item_title a {
+    font: 700 14px / 18px var(--global-item-headline-font);
+}
+
+.item_des_fY a {
+    display: none;
+    margin: 5px 0px 8px 0px;
+    font: 14px / 18px var(--global-item-description-font);
+}
+
+.fY_col_item_thumb {
+    margin-right: 15PX;
+}
+
+.fY_col_item_thumb img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    object-position: top;
+    max-width: none;
+}
+
+@media (max-width: 820px) {
+    .forYou_items_ct {
+        flex-wrap: wrap;
+    }
+
+    .fY_col_item_bx {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .forYou_items_ct {
+        gap: 0;
+    }
+
+    .ft_item_dt {
+        flex-flow: column;
+    }
+
+    .fY_col_item_dt {
+        flex-flow: column;
+    }
+
+    .fY_col_item_thumb {
+        margin: 0;
+    }
+
+    .fY_col_item_thumb img {
+        width: 100%;
+        height: auto;
+    }
+}
+/* End For You News Area Design */
+/* Start Featured News Area Design */
+.featured_news_ct {
+    margin-bottom: 50px;
+}
+
+.featureNews_headLine {
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px 20px;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    border: 1px solid var(--global-border-any-side-color);
+    border-left: 5px solid #000;
+    font: 700 26px / 28px var(--global-top-headlines-font);
+}
+
+.ft_item_bx {
+    width: 50%;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.ft_itemBx_before::before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 100%;
+    right: -10px;
+    border-right: 1px solid var(--global-border-any-side-color);
+}
+
+.feature_items_ct {
+    gap: 20px;
+}
+
+.item_title a {
+    display: block;
+    margin: 5px 0px;
+    font: 700 16px / 18px var(--global-item-headline-font);
+}
+
+.item_des a {
+    display: block;
+    margin: 5px 0px 8px 0px;
+    font: 14px / 18px var(--global-item-description-font);
+}
+
+.ft_item_thumb img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    height: 180px;
+    object-position: top;
+}
+
+@media (max-width: 1024px) {
+    .ft_item_thumb img {
+        height: 130px;
+    }
+}
+
+@media (max-width: 820px) {
+    .feature_items_ct {
+        flex-wrap: wrap;
+    }
+
+    .ft_item_bx {
+        width: 100%;
+        border-bottom: 1px solid var(--global-border-any-side-color);
+    }
+
+    .ft_itemBx_before::before {
+        display: none;
+    }
+
+    .ft_item_thumb img {
+        width: 100%;
+        height: auto;
+    }
+}
+/* End Featured News Area */
+/* End Main Global Section Design */
+
+/* Start Main Footer Section Design */
+.mainFooter_ct {
+    /* background-color: var(--gbMenuBg-color); */
+    background-color: #f52f5a;
+}
+
+.mainFooter_info {
+    width: 90%;
+    max-width: 1024px;
+    margin: auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.ft_content_bx {
+    width: 200px;
+}
+
+.mainFooter_info a {
+    color: var(--global-cg-link-color);
+}
+
+.mainFooter_info img {
+    max-width: 100%;
+}
+
+/* .footer_logo a {
+    display: flex;
+    flex-flow: column;    
+    text-align: start;
+    font-size: 24px;
+} */
+
+/* .footer_logo img {
+    width: 100px;
+    display: block;
+    padding-bottom: 5px;
+} */
+
+.ft_headLine {
+    display: inline-block;
+    color: var(--global-cg-link-color);
+    font: 700 26px / 28px var(--global-top-headlines-font);
+    border-bottom: 1px solid;
+    margin-bottom: 10px;
+}
+
+.ft_follow_dt,
+.ft_moreLinks_dt {
+    padding: 5px 0px;
+}
+
+
+.ft_follow_dt a,
+.ft_moreLinks_dt a {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--global-item-tag-font);
+    letter-spacing: 0.8px;
+    padding: 3px 0px;
+    color: #fff;
+}
+
+.ft_follow_dt a:hover,
+.ft_moreLinks_dt a:hover {
+    color: #00FF7F;
+    margin-left: 5px;
+    transition: .3s ease-in-out;
+    border-bottom: 1px solid var(--global-border-any-side-color);
+}
+
+.ft_contactUs_dt {
+    margin-bottom: 10px;
+}
+
+.ft_contactUs_dt h3 {
+    color: var(--global-cg-link-color);
+    font: 700 16px / 18px var(--global-item-headline-font);
+}
+
+.ft_contactUs_dt a {
+    font: 500 12px / 18px var(--global-item-tag-font);
+    letter-spacing: 0.8px;
+}
+
+.ft_contactUs_dt a:hover {
+    color: #00FF7F;
+    border-bottom: 1px solid var(--global-border-any-side-color);
+    opacity: 0.8;
+}
+
+
+/* Start Copy Right Area Design */
+.copyRight_ct {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.copyRight_socialLink {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.copyRight_socialLink a i {
+    color: #00FF7F;
+    font-size: 25px;
+}
+
+.copyRight_socialLink a:hover i {
+    color: #fff;
+}
+
+.copyRightAuthor_info {
+    text-align: center;
+}
+
+.copyRightAuthor_info h3 {
+    color: var(--global-cg-link-color);
+    letter-spacing: 0.8px;
+}
+
+.copyRightAuthor_info a {
+    color: #fff;
+}
+/* End Copy Right Area Design */
+
+/* End Main Footer Section Design */
