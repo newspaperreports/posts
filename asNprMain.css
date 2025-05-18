@@ -68,7 +68,7 @@ Contact:     asupdatemedia518@gmail.com
 
 /* AS - Newpaper Reports Ads Main Area Design */
 .npr_as_ads_author {
-    display: none;
+    display: block;
 }
 
 .asM_ads_ct {
